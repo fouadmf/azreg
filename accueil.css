@@ -1,0 +1,358 @@
+::selection {
+    color: rgb(3, 1, 1);
+    background: #3b190a;
+    }
+body{
+    margin: 0;
+}
+.bar{ 
+    width: 100%;
+    background: rgb(0, 0, 0);
+    color: white;
+    text-align: right;
+    box-sizing: border-box;
+    font-size: 30px;
+    display: none;
+}
+
+header{
+
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    margin-left: 5%;
+    text-align: center;
+}
+header nav a{
+    margin: 0 7px;
+    padding: 17px 7px;
+    white-space: nowrap;
+}
+.social-media{
+   margin-right: 3%;
+}
+ul {
+    display: inline-flex;
+    padding-left: 0;
+
+}
+ul li {
+    list-style: none;
+}
+header  a{
+    text-decoration:none ;
+    color: rgba(255, 255, 255, 0.699);
+    transition: .4s;
+ }
+header nav a:hover{
+        color: white;
+        background-color: rgb(53, 23, 23);
+ }
+.social-media img {
+        width: 26px;
+        height: 26px;
+        background-color:  rgba(255, 255, 255, 0.589);
+}
+.social-media img:hover{
+    background-color: rgba(53, 23, 23, 0.829);
+}
+.social-media img a .fb{
+margin: 0 2px 5px 0;
+}
+@media screen and (max-width:680px){
+    header{
+        display: block;
+        height: auto;
+    }
+    nav{
+        margin-left: 0;
+    }
+    
+    nav ul{
+        padding: 0;
+        margin-left: 0;
+        width: 100%;
+        display: grid;
+    }
+    nav a{
+        padding: 10px;
+        margin-bottom: 15px;
+        display: block;
+    }
+    nav ul li{
+        text-align: center;
+    }
+    .social-media{
+       text-align: center;
+       margin-left: 10px;
+    }
+    .fb{
+        margin-right: 60px;
+    }
+    .bar{
+        display: block;
+    }
+
+}
+.top-img {
+   height:400px ;
+   width: 100%;
+   background: no-repeat center  url("pic/top.jpg");
+   background-size: cover;
+   background-attachment: fixed;
+   position: relative;
+    top: 0;
+    bottom: 0;
+   
+}
+.top-img h1{
+  position: relative;
+  margin:auto;
+  margin-top: 150px;
+  font-size: 5em;
+  text-align: center;
+  display: initial;
+  background-color: rgba(53, 23, 23, 0.712) ;
+  border: ridge rgba(255, 255, 255, 0.623) ;
+  width: fit-content;
+
+}
+
+.body .name{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    display: grid;
+}
+.content{
+    margin-top: -21px;
+    background-color: rgba(53, 23, 23, 0.712) ;
+    display: flex;
+    flex-wrap: wrap;
+}
+.comment{
+    width: 100%;
+}
+.content a {
+    text-decoration: none;
+    color: black;
+}
+.comment h1{
+    text-align: center;
+    margin-bottom: 90px;
+    
+}
+.content img:hover{
+    transform: scale(1.06) ;
+}
+.content h2 {
+    text-align: center;
+    display: inline-block;
+}
+.produit1{
+    flex-basis: 30%;
+    margin: auto;
+    text-align: center;
+}
+.produit1 img{
+    height: 298px;
+    width:400px;
+    transition: transform .3s;
+}
+
+.produit2{
+    flex-basis: 30%;
+    margin: auto;
+    text-align: center;
+}
+.produit2 img{
+    height: 298px;
+    width:400px;
+    transition: transform .3s;
+}
+.produit3{
+    flex-basis: 30%;
+    margin: auto;
+    text-align: center;
+}
+.produit3 img{
+    height: 298px;
+    width:400px;
+    transition: transform .3s;
+}
+.menu{
+    width: 100%;
+    text-align: center;
+    margin: 60px;
+}
+.menu h3
+{    display: inline;
+    text-align: center;
+    border:double;
+  
+     background-color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.726);;
+}
+.menu h3:hover{
+    background-color: rgb(36, 16, 16);
+    color: rgba(255, 255, 255, 0.493);
+}
+@media screen and (max-width:400px){
+   .content img{
+        height: 298px;
+        width:300px;
+    }
+    .name h1{
+        
+        font-size: xxx-large;
+    }
+
+}
+.back2{
+    background: no-repeat center url("pic/back2.jpg");
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.content2{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:rgba(53, 23, 23, 0.712) ;
+}
+.content2 .info1-comment{
+    float: left;
+    width: 40%;
+    margin: 100px 10px 100px 100px;
+}
+
+.content2 .info1-img img{
+    width: 650px;
+    height: 450px;
+    float: right;
+}
+.content2 .info1-img{
+    text-align: end;
+}
+
+
+
+.info2{
+    display: inline-block;
+}
+.content2 .info2-comment{
+    float: right;
+    width: 40%;
+    margin: 30px 60px 10px 10px;
+}
+
+.content2 .info2-img img{
+    width: 670px;
+    height: 450px;
+    float: left;
+}
+.content2 .info2-img{
+    text-align: start;
+}
+@media screen and (max-width:1302px)and
+(min-width:950px)  {
+    .content2 .info1-comment{
+        width:35%;
+    }
+    .content2 .info1-img img{
+        width: 48%;
+    }
+    .content2 .info2-comment{
+        width:35%;
+    }
+    .content2 .info2-img img{
+        width: 52%;
+    }
+
+}
+@media screen and (max-width:949px)
+{
+    .content2 .info1-img{
+        float: none;
+        text-align: center;
+        display: inline-block;
+
+    }
+    .info1{
+        text-align: center;
+        display: block;
+    }
+    .content2 .info1-comment{
+        float: none;
+        width: 90%;
+        display: inline;
+        margin: auto;
+  }
+.info1 h1{
+    clear: both;
+}
+.content2 .info2-img{
+    float: none;
+    text-align: center;
+    display: inline-block;
+
+}
+.info2{
+    text-align: center;
+    display: block;
+}
+.content2 .info2-comment{
+    float: none;
+    width: 90%;
+    display: inline;
+    margin: auto;
+}
+.info2 h1{
+clear: both;
+}
+    
+}
+@media screen and (max-width:690px){
+    .content2 .info1 img{
+        width: 100%;
+        height: 390px;
+    }
+    .content2 .info2 img{
+        width: 100%;
+        height: 390px;
+    }
+}
+.nouveau{
+    background: no-repeat center url("pic/nouveau.jpg");
+     background-size: cover;
+     background-attachment: fixed;
+    width: 100%;
+    height: 600px;
+}
+.nouveau .pub{
+    text-align: center;
+}
+.nouveau .pub p{
+    margin-top: 0;
+    padding-top: 200px;
+    font-size: xx-large ;
+}
+
+.nouveau .pub h1{
+    font-size: xxx-large;
+}
+
+marquee{
+    height: 20px;
+    background-color: black;
+
+}
+ marquee {
+    color: blanchedalmond;
+}
+
